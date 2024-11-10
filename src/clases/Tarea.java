@@ -1,5 +1,6 @@
 package clases;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Tarea {
@@ -7,13 +8,13 @@ public class Tarea {
     * prioridad, estado (pendiente, en progreso, completada), usuario asignado*/
     private String tituloTarea;
     private String descripcionTarea;
-    private Date fechaEntregaTarea;
+    private LocalDate fechaEntregaTarea;
     private String prioridadTarea;  // alta, media, baja
     private String estadoTarea;      // pendiente, en progreso, completada
     private Usuario usuarioAsignadoTarea;
 
     //constructor
-    public Tarea(String tituloTarea, String descripcionTarea, Date fechaEntregaTarea, String prioridadTarea,
+    public Tarea(String tituloTarea, String descripcionTarea, LocalDate fechaEntregaTarea, String prioridadTarea,
                  String estadoTarea, Usuario usuarioAsignadoTarea) {
         this.tituloTarea = tituloTarea;
         this.descripcionTarea = descripcionTarea;
@@ -40,11 +41,11 @@ public class Tarea {
         this.descripcionTarea = descripcionTarea;
     }
 
-    public Date getFechaEntregaTarea() {
+    public LocalDate getFechaEntregaTarea() {
         return fechaEntregaTarea;
     }
 
-    public void setFechaEntregaTarea(Date fechaEntregaTarea) {
+    public void setFechaEntregaTarea(LocalDate fechaEntregaTarea) {
         this.fechaEntregaTarea = fechaEntregaTarea;
     }
 
