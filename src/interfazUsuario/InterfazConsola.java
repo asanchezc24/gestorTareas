@@ -22,6 +22,12 @@ public class InterfazConsola {
     //Método para mostrar y elegir las funciones a realizar
     public void mostrarMenu() {
         int opcion;
+        System.out.println("""
+                =============================================
+                BIENVENIDOS AL GESTOR DE TAREAS ESTUDIANTILES
+                =============================================
+                """);
+
         do {
             System.out.println("1. Agregar Usuario");
             System.out.println("2. Agregar Tarea");

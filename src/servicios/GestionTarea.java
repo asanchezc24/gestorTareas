@@ -12,6 +12,8 @@ public class GestionTarea {
     private List<Tarea> tareas = new ArrayList<>();
     private Scanner scanner = new Scanner(System.in);
 
+
+    //método para agregar una tarea al programa y asignarle un usuario
     public void agregarTarea(GestionUsuario gestionUsuario) {
         System.out.print("Ingrese el título de la tarea: ");
         String titulo = scanner.nextLine();
@@ -37,6 +39,7 @@ public class GestionTarea {
         }
     }
 
+    //método para generar un listado general de las tareas almacenadas
     public void mostrarTareas() {
         System.out.printf("""
                 \nLista de Tareas:

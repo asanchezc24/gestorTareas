@@ -27,4 +27,9 @@ public class Usuario {
     public void setCorreoUsuario(String correoUsuario) {
         this.correoUsuario = correoUsuario;
     }
+
+    @Override
+    public String toString() {
+        return String.format("%-20.20s%6s%-22s",nombreUsuario,"",correoUsuario);
+    }
 }
