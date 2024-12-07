@@ -19,8 +19,19 @@ public class GestionTarea {
         String titulo = scanner.nextLine();
         System.out.print("Ingrese la descripción: ");
         String descripcion = scanner.nextLine();
-        System.out.print("Ingrese la fecha de entrega (YYYY-MM-DD): ");
-        LocalDate fechaEntrega = LocalDate.parse(scanner.nextLine());
+
+        //Excepción para el ingreso de la fecha de entrega
+        LocalDate fechaEntrega = null;
+        while (fechaEntrega == null) {
+            try {
+                System.out.print("Ingrese la fecha de entrega (YYYY-MM-DD): ");
+                fechaEntrega = LocalDate.parse(scanner.nextLine());
+            } catch (Exception e) {
+                System.out.println("Fecha inválida. Por favor, ingrese el formato correcto (YYYY-MM-DD).");
+            }
+        }
+
+
         System.out.print("Ingrese la prioridad (alta, media, baja): ");
         String prioridad = scanner.nextLine();
         System.out.print("Ingrese el estado (pendiente, en progreso, completada): ");
