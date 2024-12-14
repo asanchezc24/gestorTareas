@@ -11,6 +11,7 @@ public class GestionUsuario {
     private Scanner consola = new Scanner(System.in);
 
     public void agregarUsuario() {
+        System.out.println("******************");
         System.out.print("Ingrese el nombre del usuario: ");
         String nombre = consola.nextLine();
         System.out.print("Ingrese el correo electrónico: ");

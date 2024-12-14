@@ -25,8 +25,7 @@ public class InterfazConsola {
         System.out.println("""
                 =============================================
                 BIENVENIDOS AL GESTOR DE TAREAS ESTUDIANTILES
-                =============================================
-                """);
+                =============================================""");
 
         do {
             System.out.println("1. Agregar Usuario");
@@ -45,6 +44,7 @@ public class InterfazConsola {
                 case 4 -> gestionTarea.mostrarTareas();
                 case 5 -> generadorReportes.generarReporteUsuario(gestionUsuario, gestionTarea);
             }
+            System.out.println("******************");
         } while (opcion != 0);
     }
 }
